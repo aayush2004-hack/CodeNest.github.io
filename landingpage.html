@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script>
+        function Show_prompt() {
+            var name = document.getElementById("name").value
+            var email = document.getElementById("email").value
+            if (name=="" || email=="") {
+                alert("Fields cannot be empty.");
+            } 
+            else {
+                alert("Successfully registered for demo class.");
+            }
+        }
+        function Show_submit() {
+            alert("Comment accepted.");
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <h1 id="logo">Code Nest</h1>
+        <ul> 
+            <li class="links"><a href="#About">About</a></li>
+            <li class="links"><a href="#Course">Courses</a></li>
+            <li class="links"><a href="#Demo">Demo Class</a></li>
+            <li class="links"><a href="#Footer">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="About" id="About">
+            <div class="about_image">
+                <img src="student.png" alt="EXPLORE COUSRE">
+            </div>
+            <div class="about_head">
+                <h1>Learn Programming with Online Course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a blanditiis voluptas recusandae enim totam temporibus eligendi iure odio accusamus. Tempora, rem totam aliquid porro quae illum nam similique quo eum voluptates! Quibusdam consectetur mollitia eveniet, cumque unde at cupiditate assumenda dolore quo suscipit ipsam beatae voluptatibus eos quaerat culpa?</p>
+                <a href="#Course"><button>Explore</button>  </a>
+            </div> 
+        </div>
+        <div class="Course" id="Course">
+            <div class="course_head">
+                <h1>Our Courses</h1>
+            </div>
+            <div class="course_items">
+                <div class="items">
+                    <img src="HTML.png" alt="">
+                    <div class="items_price">
+                        <h3>Programming</h3>
+                        <h2>$49.7</h2>
+                    </div>
+                    <div class="items_dur">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+                        <h3>Beginner</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        <h3>2.5 hours</h3>
+                    </div>
+                    <div class="items_dis">
+                        <p>A full packed course for css for a beginner</p>
+                    </div>
+                    <div class="items_enroll">
+                        <button>Enroll</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="CSS.png" alt="">
+                    <div class="items_price">
+                        <h3>Programming</h3>
+                        <h2>$49.7</h2>
+                    </div>
+                    <div class="items_dur">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+                        <h3>Beginner</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        <h3>1.6 hours</h3>
+                    </div>
+                    <div class="items_dis">
+                        <p>A full packed course for css for a beginner</p>
+                    </div>
+                    <div class="items_enroll">
+                        <button>Enroll</button>
+                    </div>
+                </div>
+                <div class="items">
+                    <img src="Javascript.png" alt="">
+                    <div class="items_price">
+                        <h3>Programming</h3>
+                        <h2>$49.7</h2>
+                    </div>
+                    <div class="items_dur">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+                        <h3>Beginner</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        <h3>3 hours</h3>
+                    </div>
+                    <div class="items_dis">
+                        <p>A full packed course for css for a beginner</p>
+                    </div>
+                    <div class="items_enroll">
+                        <button>Enroll</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="suitable">
+            <div class="suit_head">
+                <h1>Our Courses are Suitable for...</h1>
+                <img src="conputer2.png" alt="">
+            </div>
+            <div class="suit_dis">
+                <div class="suit_item">
+                    <h2>For Beginners Students</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quia porro facilis ullam, dolorem nesciunt?</p>
+                </div>
+                <div class="suit_item">
+                    <h2>Beginners IT Specialists</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequatur perspiciatis laudantium impedit, cupiditate adipisci?</p>
+                </div>
+                <div class="suit_item">
+                    <h2>Current IT Specialists</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas et, dignissimos repellendus velit ut quod.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="review">
+            <div class="review_item">
+                <div class="review_img">
+                    <img src="review.png" alt="">
+                </div>
+                <div class="review_dis">
+                    <h3><em>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores fugit beatae inventore itaque nesciunt, quam reiciendis odio hic consectetur, eligendi, aut nisi libero! Exercitationem consequatur neque perspiciatis cum explicabo rerum."</em></h3>
+                    <div class="user">
+                        <img src="user.png" alt="">
+                        <div class="user_details">
+                            <h3>John Doe</h3>
+                            <h4>Software Engineer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_item">
+                <div class="review_img">
+                    <img src="review.png" alt="">
+                </div>
+                <div class="review_dis">
+                    <h3><em>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores fugit beatae inventore itaque nesciunt, quam reiciendis odio hic consectetur, eligendi, aut nisi libero! Exercitationem consequatur neque perspiciatis cum explicabo rerum."</em></h3>
+                    <div class="user">
+                        <img src="user.png" alt="">
+                        <div class="user_details">
+                            <h3>John Doe</h3>
+                            <h4>Software Engineer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="review_item">
+                <div class="review_img">
+                    <img src="review.png" alt="">
+                </div>
+                <div class="review_dis">
+                    <h3><em>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores fugit beatae inventore itaque nesciunt, quam reiciendis odio hic consectetur, eligendi, aut nisi libero! Exercitationem consequatur neque perspiciatis cum explicabo rerum."</em></h3>
+                    <div class="user">
+                        <img src="user.png" alt="">
+                        <div class="user_details">
+                            <h3>John Doe</h3>
+                            <h4>Software Engineer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Demo" id="Demo">
+            <div class="Demo_head">
+                <h1>Book a free demo class for your course for free</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda a blanditiis voluptas recusandae enim totam temporibus eligendi iure odio accusamus. Tempora, rem totam aliquid porro quae illum nam similique quo eum voluptates! Quibusdam consectetur mollitia eveniet, cumque unde at cupiditate assumenda dolore quo suscipit ipsam beatae voluptatibus eos quaerat culpa?</p>
+            </div>
+            <div class="Demo_reg">
+                <h1>Book a Demo Class</h1>
+                <form style="display: grid;">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Input Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email"  class="reg_email"placeholder="Input Email" required>
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="20" rows="10" placeholder="Input Your Question"></textarea>
+                    <input type="submit" id="submit" value="Book Session" onclick="Show_prompt()">
+                </form>
+            </div> 
+        </div>
+        <footer class="footer" id="Footer">
+            <div class="footer_main">
+                <div class="footer_about">
+                    <h1>Code Nest</h1>
+                    <p>Code Nest is a american based company which sells course</p>
+                    <h3>Contact :</h3>
+                    <a href="callto:+91 9314851617">+91 9314851617</a>
+                    <a href="mailto:aayushsharma1715@gmail.com"><button>Email us</button></a>
+                    <h3>&copy; 2024 Code Nest & Co. All rights reserved.</h3>
+                </div>
+                <div class="footer_links">
+                    <h2>Links :</h2>
+                    <ul>
+                        <li><img src="github.png"><a href="https://github.com/aayush2004-hack">Github</a></li>
+                        <li><img src="instagram.png"><a href="https://www.instagram.com/aayushbagra_121/">Instagram</a></li>
+                        <li><img src="twitter.png"><a href="https://twitter.com/Aayush69658910">Twitter</a></li>
+                        <li><img src="linkdin.png"><a href="https://www.linkedin.com/in/aayush-sharma2004/">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content">
+                    <h2>Content :</h2>
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Course">Courses</a></li>
+                        <li><a href="#Demo">Demo Class</a></li>
+                        <li><a href="#Footer">Contact</a></li> 
+                    </ul>
+                </div>
+                <div class="footer_comment">
+                    <h2>Comments :</h2>
+                    <textarea name="Comments" id="Comments" cols="20" rows="5" placeholder="Comments here"></textarea>
+                    <input type="submit" value="Submit" id="comment_submit" onclick="Show_submit()">
+                </div>
+            </div>
+        
+        </footer>
+    </div>
+    
+</body>
+</html>

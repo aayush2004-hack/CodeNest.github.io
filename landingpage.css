@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+html,body {
+    font-family: 'Rokkitt', serif;
+    width: 100%;
+    height: 100%;
+    margin :0px;
+    scroll-behavior: smooth;
+
+}
+nav {
+    padding: 20px;
+    height :70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffd32b;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex-wrap: wrap;
+    
+
+}
+#logo {
+    
+    font-size: 30px;
+    font-weight: 800;
+    width: 500px;
+}
+nav  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 35px;
+    width: 500px;
+
+}
+nav  a {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center; 
+    color: black;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    
+     
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: black;
+    transition: width .3s;
+    border-radius: 20px;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+.About {
+    background-color: #ffd32b;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.about_head {
+    padding: 20px; 
+    width: 500px;
+}
+.about_head h1 {
+    font-size: 50px;
+}
+.about_head button {
+    width: 100px;
+    height :50px;
+    border-radius: 13px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+
+}
+.about_head button:focus {
+    animation: pop-up 0.7s;
+}
+.about_image {
+   text-align: center;
+   width: 500px;
+}
+.about_image img{
+    width:500px;
+    height: 500px;
+    filter: drop-shadow(0px 0px 100px rgb(255, 244, 84))
+
+}
+@keyframes pop-up {
+    30% {
+        transform: scale(1.1);
+        
+
+    }
+    100% {
+        transform: scale(none);
+    }
+}
+.Course {
+    margin-top: 60px;
+}
+.course_head {
+    text-align: center;
+}
+.course_head h1 {
+    font-size: 40px;
+}
+.course_items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.items {
+    width: 270px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid grey;
+    display: inline-flex;
+    flex-direction: column;
+   
+
+}
+.items img {
+    width: 270px;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    object-fit: fill;
+}
+
+.items:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    box-shadow: 10px 10px 0px rgb(174, 174, 174);
+}
+.items_price{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px;
+    align-items: center;
+    height: 30px;
+}
+.items_price h3 {
+    background-color: rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+}
+.items_price h3:hover {
+    background-color: #ffd32b;
+}
+.items_dur {
+    height: 30px;
+    margin: 0 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.items_dis p {
+    margin: 5px 10px;
+}
+.items_enroll {
+    margin: 10px 10px;
+}
+.items_enroll button {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.suitable {
+    margin-top: 50px; 
+    background-color: #ffd32b;
+}
+.suit_head {
+    text-align: center;
+    padding: 10px;
+}
+
+.suit_head img {
+    width: 1vm;
+    filter: drop-shadow(0px 0px 10px white);
+    background-color: rgb(255, 255, 181);
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+.suit_dis {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.suit_item {
+    background-color: white;
+    width: 220px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-bottom: 50px;
+
+} 
+.suit_item:hover {
+    box-shadow: 10px 10px 0px black;
+    transform :scale(1.1);
+    transition: 0.5s;
+}
+.review {
+    width: 770px;
+    margin: 50px auto;
+    display: flex;
+    overflow-x: auto ;
+    scroll-behavior: smooth ;
+}
+.review::-webkit-scrollbar {
+    display: none;
+}
+.review_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.review_img  {
+    width: 300px;
+    background-color: #ffd32b;
+    border-radius: 20px;
+}
+.review_img img {
+    width: 350px;
+    object-fit: cover;
+}
+.review_dis {
+    width: 400px;
+    margin: 10px;
+}
+.review_dis h3{
+    font-size: 25px;
+}
+.user img {
+    width: 60px;
+    background-color: grey;
+    border-radius: 15px
+
+}
+.user {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+.user h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+.user h4 {  
+    margin: 0px;
+}
+.Demo {
+    background-color: #1F1D0D;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Demo_head {
+    color: white;
+    padding: 20px; 
+    width: 600px;
+}
+.Demo_head h1 {
+    font-size: 50px;
+}
+.Demo_reg {
+    padding: 20px;
+    display: grid;
+    width: 400px;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 10px 10px 0px #ffd32b;
+}
+.Demo_reg h1 {
+    margin: 10px auto;  
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+#Message {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    border: 1px solid rgb(202, 202, 202);
+    font-size: 16px;
+    resize: vertical;
+    min-height: 127px;
+}
+#name,.reg_email{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    border: 1px solid rgb(202, 202, 202);
+}
+#name:focus,.reg_email:focus,#Message:focus {
+    border: 1px solid rgb(202, 202, 202);
+    outline: 0;
+    background-color: white; 
+}
+#submit {
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color: #1F1D0D;
+}
+label {
+    margin: 5px 0px;
+    font-size: large;
+}
+footer {
+    margin-top: 50px;
+    background-color: #1F1D0D;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer_main {
+    padding: 10px;
+    display: flex;  
+    justify-content: space-around;
+}
+.footer_main ul {
+    padding: 0;
+    list-style: none;
+}
+.footer_main a {
+    text-decoration: none;
+    color: white;
+}
+.footer_main h2 {
+    margin: 5px 0px;
+}
+.footer_about {
+    width: 250px;
+    display: grid;
+}
+.footer_about a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    display: block;
+}
+.footer_about h1 , .footer_about h3, .footer_about p{
+    margin: 5px 0px;
+}
+.footer_about button {
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+}
+.footer_links {
+    justify-content: center;
+    
+}
+.footer_links img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.footer_links li {
+    display: flex;
+    align-items: center;
+    padding: 2px;   
+}
+.footer_content li {
+    margin: 10px 0px;
+}
+.footer_comment {
+    display: grid;
+}
+#Comments {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    font-size: 16px;
+    resize: vertical;
+    max-height: 80px;
+    outline: none;
+}
+#Comments:focus {
+    background-color: white;
+}
+#comment_submit {
+    background-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 5px 0px;
+    height: 40px;
+}
+/* ///////////////////////////////responsive////////////////////////// */
+@media only screen and (max-width: 600px) {
+    html,body {
+        width: 850px;
+    }
+    .main {
+        width: 100%;
+        align-items: center;
+    }
+    nav ul {
+        display: none;
+    }
+    .course_items {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .items {
+        margin :20px;
+        width: 450px;
+        height: 600px;
+    }
+    .items img {
+       width: 450px;
+       height: 350px;
+       object-fit: fill;
+    }
+    .suit_dis {
+        flex-direction: column;
+        align-items: center;
+    }
+    .suit_head img {
+        width: 600px;
+    }
+    footer {
+        width: 850px;
+    }
+    .footer_main {
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
