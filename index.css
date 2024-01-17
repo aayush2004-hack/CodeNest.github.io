@@ -188,6 +188,7 @@ nav a:hover::after {
     border-radius: 10px;
     font-size: 15px;
     font-weight: 600;
+
 }
 .suitable {
     margin-top: 50px; 
@@ -434,8 +435,31 @@ footer {
         width: 100%;
         align-items: center;
     }
+    nav {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
     nav ul {
         display: none;
+    }
+    .About {
+        padding: 0px;
+        gap :0px;
+        align-items: center;
+        height: 950px;
+    }
+    .about_head {
+        text-align: center;
+        padding: 0px; 
+        width: 600px;
+    }
+    .about_head h1 {
+        font-size: 60px;
+        margin: 0px;
+    }
+    .about_head p {
+        margin: 5px;
+        font-size: larger;
     }
     .course_items {
         flex-direction: column;
@@ -453,12 +477,36 @@ footer {
        height: 350px;
        object-fit: fill;
     }
-    .suit_dis {
-        flex-direction: column;
-        align-items: center;
+    .items_dis p {
+        margin: 5px 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .items_enroll button {
+        width: 120px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .course_head h1 {
+        font-size: 50px;
+    }
+    .suit_dis h1 {
+        font-size: 25px;
+    }
+    .suit_dis p {
+        font-size: larger;
     }
     .suit_head img {
         width: 600px;
+    }
+    .suit_head h1 {
+        font-size: 50px;
+    }
+   
+    .suit_item {
+        height: 250px;
     }
     footer {
         width: 850px;
@@ -468,7 +516,23 @@ footer {
         grid-template-columns: auto auto;
         
     }
+    .Demo {
+        flex-wrap: wrap;
+    }
+    .Demo_reg {
+        width :500px;
+        height: 700px;
+    }
+    .about_image {
+        width: 600px;
+        height: 600px;
+    }
+    .about_image img {
+        width: 600px;
+        height: 600px;
 
+    }
+    
 }
 
 
